@@ -3,6 +3,7 @@ const express = require("express");
 const socketio = require("socket.io");
 const http = require("http");
 const cors = require("cors"); // for use when deployed
+// Also change 'nodemon' to 'node' in package.json scripts/start when deploying
 
 const { addUser, removeUser, getUser, getUsersInRoom } = require("./users");
 
